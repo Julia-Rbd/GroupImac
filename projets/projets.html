@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Liste des projets</title>
+</head>
+<body>
+	<h1>Liste des projets</h1>
+	
+	<!-- Liste des projets affichée grâce au JS --> 
+	<div id="allProjets">
+	</div>
+
+    <!---------------- AJOUTER  ----------------> 
+
+    <h1>Ajouter un projet</h1>
+
+    <form id="formProjet">
+
+        <fieldset>
+            <!-- Si pas de session d'activée -->
+
+            <!-- Attention : cette partie n'a pas encore été implémentée -->
+
+            <legend>Ton profil</legend>
+            
+            <label for="input-prenom">Prénom : </label>
+            <input type="text" name="prenom" id='input-prenom'>
+
+            <label for="input-nom">Nom : </label>
+            <input type="text" name="nom" id='input-nom'>
+
+            <label for="input-promo">Année : </label>
+            <select id="input-promo">
+                <option value="">-- Promotion --</option>
+                <option value="IMAC1">IMAC1</option>
+                <option value="IMAC2">IMAC2</option>
+                <option value="IMAC3">IMAC3</option>
+            </select>
+
+            <label for="input-discord">Mon Discord : </label>
+            <input type="text" name="discord" id='input-discord'>
+
+            <!-- Attention : jusqu'ici, cette partie n'a pas encore été implémentée -->   
+        </fieldset>
+
+        <fieldset>
+            <legend>Ton projet</legend>
+
+            <label for="input-titre">Titre du projet : </label>
+            <input type="text" name="titre" id='input-titre'>
+
+            <label for="input-presentation">Présentation : </label>
+            <textarea name="presentation" id='input-presentation'></textarea>
+
+            <label for="input-deadline">Deadline : </label>
+            <input type="date" id="input-deadline" name="deadline">
+
+            <label for="input-cadre">Cadre : </label>
+            <select id="input-cadre">
+                <option value="">-- choisir un cadre --</option>
+                <option value="scolaire">scolaire</option>
+                <option value="personnel">personnel</option>
+                <option value="professionnel">professionnel</option>
+            </select>
+
+            <!-- Attention : cette partie n'a pas encore été implémentée -->
+            <label for="input-jeRecherche">Je recherche </label>
+            <textarea name="jeRecherche" id='input-jeRecherche'>Types de compétences et/ou points forts, séparés par des points-virgules (ex : montage; caméra; etc.) </textarea>
+
+            <label for="input-membres">Membres du groupe </label>
+            <textarea name="membres" id='input-membres'>Membres actuels du groupe, séparés par des points-virgules (ex : Prénom Nom; Prénom Nom;...) </textarea>
+            <!-- Attention : jusqu'ici, cette partie n'a pas encore été implémentée -->   
+
+
+            <button id="publier">Publier</button>
+
+        </fieldset>
+    </form>
+
+
+    <!------------- VOIR UN PROJET  ------------> 
+
+    <div id="voirProjet">
+        <h1 id="titre">Titre</h1>
+        <p>Publié le <span id="datePubli"></span></p>
+        <p> Description : <span id="desc">Insérer une description.</span></p>
+        <p>Cadre : <span id="cadre">Insérer un cadre.</span></p>
+        <p>Date de rendu : <span id="deadline">Insérer une date.</span></p>
+        <div id='boutons'></div>
+
+
+    <!----------- MODIFIER LE PROJET  ----------> 
+
+        <form id="upProjet">
+
+            <fieldset>
+                <!-- Si pas de session d'activée -->
+
+
+            <!-- Attention : cette partie n'a pas encore été implémentée -->
+            <legend>Ton profil</legend>
+                
+                <label for="update-prenom">Prénom : </label>
+                <input type="text" name="prenom" id='update-prenom'>
+
+                <label for="update-nom">Nom : </label>
+                <input type="text" name="nom" id='update-nom'>
+
+                <label for="update-promo">Année : </label>
+                <select id="input-promo">
+                    <option value="">-- Promotion --</option>
+                    <option value="IMAC1">IMAC1</option>
+                    <option value="IMAC2">IMAC2</option>
+                    <option value="IMAC3">IMAC3</option>
+                </select>
+
+                <label for="update-discord">Mon Discord : </label>
+                <input type="text" name="discord" id='update-discord'>
+            <!-- Attention : jusqu'ici, cette partie n'a pas encore été implémentée -->   
+                
+            </fieldset>
+   
+            <fieldset>
+                <legend>Modifier le projet</legend>
+
+                <label for="update-titre">Titre du projet : </label>
+                <input type="text" name="titre" id='update-titre'>
+
+                <label for="update-presentation">Présentation : </label>
+                <textarea name="presentation" id='update-presentation'></textarea>
+
+                <label for="update-deadline">Deadline : </label>
+                <input type="date" id="update-deadline" name="deadline">
+
+                <label for="update-cadre">Cadre : </label>
+                <select id="update-cadre">
+                    <option value="">-- choisir un cadre --</option>
+                    <option value="scolaire">scolaire</option>
+                    <option value="personnel">personnel</option>
+                    <option value="professionnel">professionnel</option>
+                </select>
+
+            <!-- Attention : cette partie n'a pas encore été implémentée -->
+                <label for="update-jeRecherche">Je recherche </label>
+                <textarea name="jeRecherche" id='update-jeRecherche'>Types de compétences et/ou points forts, séparés par des points-virgules (ex : montage; caméra; etc.) </textarea>
+
+                <label for="update-membres">Membres du groupe </label>
+                <textarea name="membres" id='update-membres'>Membres actuels du groupe, séparés par des points-virgules (ex : Prénom Nom; Prénom Nom;...) </textarea>
+            <!-- Attention : jusqu'ici, cette partie n'a pas encore été implémentée -->   
+
+                <div id="boutonsUpdate"></div>
+            </fieldset>
+        </form>
+	</div>
+
+    <script src="appProjet.js"></script>
+</body>
+</html>
