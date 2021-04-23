@@ -7,7 +7,7 @@ if (isset($_POST['inscription']) && $_POST['inscription'] == 'Inscription') {
       {
          $erreur = 'Les 2 password sont differents.';
          echo $erreur; 
-         echo"<br/><a href=\"accueil.php\">Accueil</a>";
+         echo"<br/><a href=\"index.html\">Accueil</a>";
          exit();
       }else {	
       //si les deux mots de passe sont identiques, on se connecte à la bdd
@@ -18,14 +18,14 @@ if (isset($_POST['inscription']) && $_POST['inscription'] == 'Inscription') {
          }else {
             $erreur = 'Echec de l\'inscription !<br/>Un membre possede deja ce login !';
             echo $erreur; 
-            echo"<br/><a href=\"accueil.php\">Accueil</a>";
+            echo"<br/><a href=\"index.html\">Accueil</a>";
          }
       }
    //Si au moins un des champs est vide
    }else {
    $erreur = 'Echec de l\'inscription !<br/>Au moins un des champs est vide !';
    echo $erreur; 
-   echo"<br/><a href=\"accueil.php\">Accueil</a>";
+   echo"<br/><a href=\"index.html\">Accueil</a>";
    }
 }
 ?>

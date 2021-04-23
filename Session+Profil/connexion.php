@@ -9,11 +9,11 @@ if (isset($_POST['connexion']) && $_POST['connexion'] == 'Connexion') {
             }else {
             $erreur = 'Login ou mot de passe non reconnu !';
             echo $erreur; 
-            echo"<br/><a href=\"accueil.php\">Accueil</a>";
+            echo"<br/><a href=\"index.html\">Accueil</a>";
             }
         }else {
 $erreur = 'Errreur de saisie !<br/>Au moins un des champs est vide !'; 
 echo $erreur; 
-echo"<br/><a href=\"accueil.php\">Accueil</a>";
+echo"<br/><a href=\"index.html\">Accueil</a>";
 }
 }
