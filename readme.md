@@ -44,8 +44,6 @@ Enjoy <3
     - Modifier un profil 
     - Voir un profil 
     - Supprimer un profil ? 
-- Partie Sessions
-    - Faire en sorte qu'on puisse se connecter / déconnecter / se créer un compte
 - Assemblage 
     - Lier commentaires et projets 
     - Lier projets et profil 
