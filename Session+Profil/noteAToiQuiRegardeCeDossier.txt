@@ -1,0 +1,2 @@
+C'est le bordel encore mais ça fonctionne !
+Jvais essayé de tout bien regrouper avec les model le controller et tout après ;)

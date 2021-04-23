@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Inscription</title>
+    <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body>
+    Inscription à l'espace membre :<br/>
+    <form action="verification.php" method="post">
+        <label for="prenom">prenom*</label><input type="text" name="prenom" value=""><br/>
+        <label for="nom">nom*</label><input type="text" name="nom" value=""><br/>
+        <label for="mdp1">mdp*</label><input type="password" name="mdp1" value=""><br/>
+        <label for="mdp2">confirmation mdp*</label> <input type="password" name="mdp2" value=""><br/>
+        <label for="promo">Promotion*</label>
+        <select name="promo">
+            <option value="imac1">IMAC1</option>
+            <option value="imac2">IMAC2</option>
+            <option value="imac3">IMAC3</option>
+        </select><br/>
+        <input type="submit" name="inscription" value="Inscription">
+    </form>
+</body>
+
+</html>
