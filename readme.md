@@ -26,10 +26,12 @@ Enjoy <3
     - Ajouter un projet : fait 
     - Supprimer un projet : fait 
     - Modifier un projet : fait 
-- Partie Sessions
-    - Faire en sorte qu'on puisse se connecter / déconnecter / se créer un compte
+
 - Partie "Profil"
     - Ajouter un profil
+    - Modifier un profil 
+    - Voir un profil 
+    - Supprimer un profil 
 
 ## Ce qui reste à faire 
 - Partie "Projets" : 
@@ -40,11 +42,11 @@ Enjoy <3
     - Voir tous les commentaires d'un projet 
     - Supprimer un commentaire 
     - Modifier un commentaire ? 
-- Partie "Profil"
-    - Modifier un profil 
-    - Voir un profil 
-    - Supprimer un profil ? 
 - Assemblage 
     - Lier commentaires et projets 
     - Lier projets et profil 
     - Lier profil et commentaires 
+
+## Ce qu'on laisse de côté pour l'instant
+- Partie Sessions
+    - Faire en sorte qu'on puisse se connecter / déconnecter / se créer un compte
