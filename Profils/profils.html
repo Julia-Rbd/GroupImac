@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profils</title>
+</head>
+
+<body>
+    <div id="allProfils">
+        <h1>Tous nos profils</h1>
+        <div id="ListProfils"></div>
+        <button onclick="showDiv('addForm')">Ajouter un profil</button>
+        <form id="addForm">
+            <fieldset>
+                <legend>Ton profil</legend>
+
+                <label for="add-prenom">Prénom : </label>
+                <input type="text" name="prenom" id='add-prenom' maxlength="30">
+                </br>
+                <label for="add-nom">Nom : </label>
+                <input type="text" name="nom" id='add-nom' maxlength="30">
+                </br>
+                <label for="add-promo">Année : </label>
+                <select id="add-promo">
+                        <option value="">-- Promotion --</option>
+                        <option value="IMAC1">IMAC1</option>
+                        <option value="IMAC2">IMAC2</option>
+                        <option value="IMAC3">IMAC3</option>
+                    </select>
+                </br>
+                <label for="add-discord">Mon Discord : </label>
+                <input type="text" name="discord" id='add-discord' maxlength="100">
+                </br>
+                <label for="add-presentation">Présentation : </label>
+                <input type="text" name="presentation" id='add-presentation'>
+                <button id="ajouter">Ajouter</button>
+        </form>
+    </div>
+    <div id="profil">
+        <h1 id="NomPrenomProfil"></h1>
+        <div id="info"></div>
+        <div id="boutons"></div>
+        <form id="upProfil">
+            <fieldset>
+                <legend>Ton profil</legend>
+
+                <label for="update-prenom">Prénom : </label>
+                <input type="text" name="prenom" id='update-prenom' maxlength="30">
+                </br>
+                <label for="update-nom">Nom : </label>
+                <input type="text" name="nom" id='update-nom' maxlength="30">
+                </br>
+                <label for="update-promo">Année : </label>
+                <select id="update-promo">
+                        <option value="">-- Promotion --</option>
+                        <option value="IMAC1">IMAC1</option>
+                        <option value="IMAC2">IMAC2</option>
+                        <option value="IMAC3">IMAC3</option>
+                    </select>
+                </br>
+                <label for="update-discord">Mon Discord : </label>
+                <input type="text" name="discord" id='update-discord' maxlength="100">
+                </br>
+                <label for="update-presentation">Présentation : </label>
+                <input type="text" name="presentation" id='update-presentation'>
+                <div id="boutonModifier"></div>
+            </fieldset>
+        </form>
+
+        <!-- <form action="authentification.php" method="POST">
+            <label for="nom">Nom :</label><input type="text" name="nom" id="nom">
+            <label for="mdp">Mdp :</label><input type="text" name="mdp" id="mdp">
+            <button type="submit" name="connexion">Connexion</button>
+        </form> -->
+    </div>
+    <script src="appProfil.js"></script>
+</body>
+
+</html>
